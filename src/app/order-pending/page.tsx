@@ -24,8 +24,8 @@ function OrderPendingContent() {
         </CardHeader>
         <CardContent className="space-y-6">
           <p className="text-lg text-slate-700">
-            Your payment is being processed. We'll update your order status once
-            confirmed.
+            Your payment is being processed. We&apos;ll update your order status
+            once confirmed.
           </p>
 
           {orderId && (

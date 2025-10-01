@@ -5,7 +5,6 @@ import { useRouter } from "next/navigation";
 import Image from "next/image";
 import { Plus, Minus, ShoppingCart } from "lucide-react";
 import { Product } from "@/types";
-import { Button } from "@/components/ui/Button";
 import { formatPrice } from "@/lib/utils";
 import { useAuth } from "@/contexts/AuthContext";
 import toast from "react-hot-toast";

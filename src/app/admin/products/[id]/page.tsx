@@ -31,6 +31,7 @@ export default function ProductEditPage({
 
   useEffect(() => {
     fetchProduct();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [id]);
 
   const fetchProduct = async () => {
@@ -44,7 +45,7 @@ export default function ProductEditPage({
         description: data.description,
         price: data.price,
       });
-    } catch (error) {
+    } catch {
       toast.error("Failed to load product");
       router.push("/admin");
     } finally {
@@ -72,7 +73,7 @@ export default function ProductEditPage({
 
       toast.success("Product updated successfully!");
       router.push("/admin");
-    } catch (error) {
+    } catch {
       toast.error("Failed to update product");
     } finally {
       setSaving(false);
@@ -270,4 +271,3 @@ export default function ProductEditPage({
     </AdminRoute>
   );
 }
-

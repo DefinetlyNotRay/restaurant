@@ -25,8 +25,8 @@ function OrderFailedContent() {
         </CardHeader>
         <CardContent className="space-y-6">
           <p className="text-lg text-slate-700">
-            We're sorry, but your payment could not be processed. Please try
-            again.
+            We&apos;re sorry, but your payment could not be processed. Please
+            try again.
           </p>
 
           {statusMessage && (

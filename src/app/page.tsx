@@ -18,7 +18,7 @@ export default function Home() {
         if (!res.ok) throw new Error("Failed to load products");
         const data = await res.json();
         setProducts(data);
-      } catch (err) {
+      } catch {
         toast.error("Failed to load menu. Please try again.");
       } finally {
         setLoading(false);

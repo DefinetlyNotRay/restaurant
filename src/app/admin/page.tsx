@@ -7,7 +7,7 @@ import { Product } from "@/types";
 import { Button } from "@/components/ui/Button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/Card";
 import { formatPrice, formatDate } from "@/lib/utils";
-import { Plus, Upload, Eye, Trash2, Package } from "lucide-react";
+import { Upload, Eye, Trash2, Package } from "lucide-react";
 import toast from "react-hot-toast";
 import Image from "next/image";
 
